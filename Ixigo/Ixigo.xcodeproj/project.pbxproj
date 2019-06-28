@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		84BB80F522C63DCC00B8252D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB80F422C63DCC00B8252D /* AppDelegate.swift */; };
-		84BB80F722C63DCC00B8252D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB80F622C63DCC00B8252D /* ViewController.swift */; };
 		84BB80FA22C63DCC00B8252D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BB80F822C63DCC00B8252D /* Main.storyboard */; };
 		84BB80FD22C63DCC00B8252D /* Ixigo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84BB80FB22C63DCC00B8252D /* Ixigo.xcdatamodeld */; };
 		84BB80FF22C63DCF00B8252D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BB80FE22C63DCF00B8252D /* Assets.xcassets */; };
 		84BB810222C63DCF00B8252D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BB810022C63DCF00B8252D /* LaunchScreen.storyboard */; };
 		84BB810D22C63DCF00B8252D /* IxigoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB810C22C63DCF00B8252D /* IxigoTests.swift */; };
 		84BB811822C63DCF00B8252D /* IxigoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB811722C63DCF00B8252D /* IxigoUITests.swift */; };
+		84BB812A22C63F0600B8252D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB812922C63F0600B8252D /* Constants.swift */; };
+		84BB812C22C63F7D00B8252D /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB812B22C63F7D00B8252D /* GetRequest.swift */; };
+		84BB812F22C641E700B8252D /* FlightsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB812E22C641E700B8252D /* FlightsVM.swift */; };
+		84BB813122C6431000B8252D /* FlightsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB813022C6431000B8252D /* FlightsVC.swift */; };
+		84BB813322C6441900B8252D /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB813222C6441900B8252D /* Flight.swift */; };
+		84BB813522C6481C00B8252D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB813422C6481C00B8252D /* Helper.swift */; };
+		84BB813722C6526500B8252D /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB813622C6526500B8252D /* Indicator.swift */; };
+		84BB813922C653FF00B8252D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB813822C653FF00B8252D /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +44,6 @@
 /* Begin PBXFileReference section */
 		84BB80F122C63DCC00B8252D /* Ixigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ixigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BB80F422C63DCC00B8252D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84BB80F622C63DCC00B8252D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84BB80F922C63DCC00B8252D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84BB80FC22C63DCC00B8252D /* Ixigo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ixigo.xcdatamodel; sourceTree = "<group>"; };
 		84BB80FE22C63DCF00B8252D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 		84BB811322C63DCF00B8252D /* IxigoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IxigoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BB811722C63DCF00B8252D /* IxigoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IxigoUITests.swift; sourceTree = "<group>"; };
 		84BB811922C63DCF00B8252D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BB812922C63F0600B8252D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84BB812B22C63F7D00B8252D /* GetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequest.swift; sourceTree = "<group>"; };
+		84BB812E22C641E700B8252D /* FlightsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsVM.swift; sourceTree = "<group>"; };
+		84BB813022C6431000B8252D /* FlightsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsVC.swift; sourceTree = "<group>"; };
+		84BB813222C6441900B8252D /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		84BB813422C6481C00B8252D /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		84BB813622C6526500B8252D /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		84BB813822C653FF00B8252D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +113,12 @@
 		84BB80F322C63DCC00B8252D /* Ixigo */ = {
 			isa = PBXGroup;
 			children = (
+				84BB812822C63EED00B8252D /* Helpers */,
+				84BB812722C63EE200B8252D /* Modal */,
+				84BB812D22C641D400B8252D /* ViewModal */,
+				84BB812622C63EC900B8252D /* View */,
+				84BB812522C63EBB00B8252D /* Controller */,
 				84BB80F422C63DCC00B8252D /* AppDelegate.swift */,
-				84BB80F622C63DCC00B8252D /* ViewController.swift */,
 				84BB80F822C63DCC00B8252D /* Main.storyboard */,
 				84BB80FE22C63DCF00B8252D /* Assets.xcassets */,
 				84BB810022C63DCF00B8252D /* LaunchScreen.storyboard */,
@@ -126,6 +144,49 @@
 				84BB811922C63DCF00B8252D /* Info.plist */,
 			);
 			path = IxigoUITests;
+			sourceTree = "<group>";
+		};
+		84BB812522C63EBB00B8252D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84BB813022C6431000B8252D /* FlightsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84BB812622C63EC900B8252D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84BB813622C6526500B8252D /* Indicator.swift */,
+				84BB813822C653FF00B8252D /* Alert.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84BB812722C63EE200B8252D /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				84BB813222C6441900B8252D /* Flight.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		84BB812822C63EED00B8252D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				84BB812922C63F0600B8252D /* Constants.swift */,
+				84BB812B22C63F7D00B8252D /* GetRequest.swift */,
+				84BB813422C6481C00B8252D /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		84BB812D22C641D400B8252D /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				84BB812E22C641E700B8252D /* FlightsVM.swift */,
+			);
+			path = ViewModal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +320,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84BB80F722C63DCC00B8252D /* ViewController.swift in Sources */,
+				84BB812C22C63F7D00B8252D /* GetRequest.swift in Sources */,
+				84BB812F22C641E700B8252D /* FlightsVM.swift in Sources */,
 				84BB80F522C63DCC00B8252D /* AppDelegate.swift in Sources */,
 				84BB80FD22C63DCC00B8252D /* Ixigo.xcdatamodeld in Sources */,
+				84BB813122C6431000B8252D /* FlightsVC.swift in Sources */,
+				84BB812A22C63F0600B8252D /* Constants.swift in Sources */,
+				84BB813322C6441900B8252D /* Flight.swift in Sources */,
+				84BB813722C6526500B8252D /* Indicator.swift in Sources */,
+				84BB813922C653FF00B8252D /* Alert.swift in Sources */,
+				84BB813522C6481C00B8252D /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
