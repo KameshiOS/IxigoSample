@@ -39,7 +39,7 @@ public class FlightsVM {
                 let origin = data["originCode"] as! String
                 let price = data["price"] as! String
                 let takeoff = data["takeoffTime"] as! String
-                let flight = Flight(airline: getAirline(code: airlineCode), flightClass: getFlightClass(name: flightClass), destination: getCity(code: destination), landingTime: Date(milliseconds: Int(landing)!), origin: getCity(code: origin), price: Int(price) ?? 0, takeoffTime: Date(milliseconds: Int(takeoff)!))
+                let flight = Flight(airline: getAirline(code: airlineCode), flightClass: flightClass, destination: destination, landingTime: Date(milliseconds: Int(landing)!), origin: origin, price: Int(price) ?? 0, takeoffTime: Date(milliseconds: Int(takeoff)!))
                 flights.append(flight)
             }
         }

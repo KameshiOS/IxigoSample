@@ -10,14 +10,14 @@ import Foundation
 
 struct Flight {
     var airline: AirLine!
-    var flightClass: FlightClass!
-    var destination: City!
+    var flightClass: String!
+    var destination: String!
     var landingTime: Date!
-    var origin: City!
+    var origin: String!
     var price: Int!
     var takeoffTime: Date!
     
-    init(airline: AirLine, flightClass: FlightClass, destination: City, landingTime: Date, origin: City, price: Int, takeoffTime: Date!) {
+    init(airline: AirLine, flightClass: String, destination: String, landingTime: Date, origin: String, price: Int, takeoffTime: Date!) {
         self.airline = airline
         self.flightClass = flightClass
         self.destination = destination

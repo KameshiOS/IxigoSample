@@ -8,6 +8,25 @@
 
 import Foundation
 
+var dateFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "dd MMM, YYYY"
+    return formatter
+}()
+var timeFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "HH:mm"
+    return formatter
+}()
+
+func getDuration(start: Date, end: Date) -> String {
+    let formatter = DateComponentsFormatter()
+    formatter.allowedUnits = [.hour, .minute, .day, .weekOfMonth]
+    formatter.unitsStyle = .short
+    let duration = formatter.string(from: start, to: end)!
+    
+    return duration
+}
 func getAirline(code: String) -> AirLine {
     if code == "AI" {
         return .AirIndia
@@ -19,22 +38,6 @@ func getAirline(code: String) -> AirLine {
         return .JetAirways
     } else {
         return .SpiceJet
-    }
-}
-
-func getCity(code: String) -> City {
-    if code == "DEL" {
-        return .NewDelhi
-    } else {
-        return .Mumbai
-    }
-}
-
-func getFlightClass(name: String) -> FlightClass {
-    if name == "Business" {
-        return .Business
-    } else {
-        return .Economy
     }
 }
 

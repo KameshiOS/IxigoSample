@@ -19,14 +19,6 @@ enum AirLine {
     case JetAirways
     case SpiceJet
 }
-enum City {
-    case NewDelhi
-    case Mumbai
-}
-enum FlightClass {
-    case Business
-    case Economy
-}
 class APIGet {
     static var sampleFlights = "https://www.ixigo.com/sampleFlightData"
 }
