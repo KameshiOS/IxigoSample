@@ -27,7 +27,6 @@ extension FlightsVC {
     func getFlightList() {
         FlightsVM.shared.getFlights { (success, error) in
             if success {
-                print(FlightsVM.shared.flights)
             } else {
                 self.alert(title: "Alert!", message: error!)
             }

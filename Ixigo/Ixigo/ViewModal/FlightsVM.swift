@@ -17,7 +17,6 @@ public class FlightsVM {
         GetRequest.getMethod(getURL: APIGet.sampleFlights) { (response, error) in
             if error == "nil" {
                 if let json = response as? JSONDictionary {
-                    print(response)
                     self.parseFlights(json: json)
                     completion(true, "")
                 } else {
