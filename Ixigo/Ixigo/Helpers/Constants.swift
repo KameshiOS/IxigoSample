@@ -6,6 +6,7 @@
 //  Copyright © 2019 fashionexpress. All rights reserved.
 //
 
+// Comments: All the public constant are initialized here
 import Foundation
 
 typealias JSONDictionary = [String:Any]

@@ -28,13 +28,7 @@ class FlightsVC: UIViewController, Alert {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        flightDetailTable.delegate = self
-        flightDetailTable.dataSource = self
-        
-        sortTable.delegate = self
-        sortTable.dataSource = self
-        sortTable.tableFooterView = UIView()
-        sortTable.isScrollEnabled = false
+        initializeDelegates()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -42,12 +36,14 @@ class FlightsVC: UIViewController, Alert {
         getFlightList()
     }
     @IBAction func SortButtonAction(_ sender: Any) {
+        // Open Sort view with bottom animation
         openSortView()
     }
     @IBAction func BackButtonAction(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
 }
+// MARK:- Tableview delegate methods for Sort Tableview & Flights Tableview
 extension FlightsVC: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         if tableView == sortTable {
@@ -108,6 +104,7 @@ extension FlightsVC: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView == sortTable {
+            // Sorting the flights based on the selection done on the tableview
             if indexPath.row == 0 {
                 sortflights(sorting: .priceLow)
             } else if indexPath.row == 1 {
@@ -125,9 +122,11 @@ extension FlightsVC: UITableViewDelegate, UITableViewDataSource {
             DispatchQueue.main.async {
                 self.sortTable.reloadData()
                 self.closeSortView()
+                // Scrolled back to first section on each sort selection
                 self.flightDetailTable.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
             }
         } else {
+            // Pushing the ticket details to ETicket View controller
             let destVC = storyboard?.instantiateViewController(withIdentifier: "ETicketVC") as! ETicketVC
             if isSorted {
                 destVC.flight = sortedFlights[indexPath.row]
@@ -145,9 +144,19 @@ extension FlightsVC: UITableViewDelegate, UITableViewDataSource {
 }
 // MARK:- Default Methods
 extension FlightsVC {
+    func initializeDelegates() {
+        flightDetailTable.delegate = self
+        flightDetailTable.dataSource = self
+        
+        sortTable.delegate = self
+        sortTable.dataSource = self
+        sortTable.tableFooterView = UIView()
+        sortTable.isScrollEnabled = false
+    }
     func getFlightList() {
         FlightsVM.shared.getFlights { (success, error) in
             if success {
+                // Check for filter option
                 self.filterFlight()
                 DispatchQueue.main.async {
                     self.flightDetailTable.reloadData()
@@ -167,48 +176,43 @@ extension FlightsVC {
             isFiltered = true
             filteredFlights = FlightsVM.shared.flights.filter({ $0.flightClass == flightClass })
         }
+        // Setting up default initial sort option. Sorting the flights array in descending order
         self.sortflights(sorting: .priceLow)
     }
     func sortflights(sorting: Sorting) {
         isSorted = true
         switch sorting {
         case .priceLow:
-            print("Price Low")
             if isFiltered {
                 sortedFlights = filteredFlights.sorted(by: { $0.price < $1.price })
             } else {
                 sortedFlights = FlightsVM.shared.flights.sorted(by: { $0.price < $1.price })
             }
         case .priceHigh:
-            print("Price High")
             if isFiltered {
                 sortedFlights = filteredFlights.sorted(by: { $0.price > $1.price })
             } else {
                 sortedFlights = FlightsVM.shared.flights.sorted(by: { $0.price > $1.price })
             }
         case .takeLow:
-            print("Take Low")
             if isFiltered {
                 sortedFlights = filteredFlights.sorted(by: { $0.takeoffTime < $1.takeoffTime })
             } else {
                 sortedFlights = FlightsVM.shared.flights.sorted(by: { $0.takeoffTime < $1.takeoffTime })
             }
         case .takeHigh:
-            print("Take High")
             if isFiltered {
                 sortedFlights = filteredFlights.sorted(by: { $0.takeoffTime > $1.takeoffTime })
             } else {
                 sortedFlights = FlightsVM.shared.flights.sorted(by: { $0.takeoffTime > $1.takeoffTime })
             }
         case .landLow:
-            print("Land Low")
             if isFiltered {
                 sortedFlights = filteredFlights.sorted(by: { $0.landingTime < $1.landingTime })
             } else {
                 sortedFlights = FlightsVM.shared.flights.sorted(by: { $0.landingTime < $1.landingTime })
             }
         case .landHigh:
-            print("Land High")
             if isFiltered {
                 sortedFlights = filteredFlights.sorted(by: { $0.landingTime > $1.landingTime })
             } else {
@@ -220,6 +224,7 @@ extension FlightsVC {
         }
     }
     func openSortView() {
+        // Navigation bar interaction is disabled in order to avoid opening sort view multiple time.
         navigationController?.navigationBar.isUserInteractionEnabled = false
         dimView.frame = view.frame
         dimView.backgroundColor = UIColor.black
@@ -233,6 +238,7 @@ extension FlightsVC {
         sortTable.layer.cornerRadius = 8
         view.addSubview(sortTable)
         
+        // UIView Spring Animation is used to get smooth and neat UI Experience
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
             self.dimView.alpha = 0.5
             self.sortTable.frame = CGRect(x: 0, y: self.view.frame.height - self.sortTable.frame.height + 20, width: self.sortTable.frame.width, height: self.sortTable.frame.height)

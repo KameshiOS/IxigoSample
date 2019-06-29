@@ -6,6 +6,8 @@
 //  Copyright © 2019 fashionexpress. All rights reserved.
 //
 
+// Comment: This E-Ticket screen is just to show the ticket details with no. of passengers and total price.
+
 import UIKit
 
 class ETicketVC: UIViewController {

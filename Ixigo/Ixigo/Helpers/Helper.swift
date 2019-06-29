@@ -6,6 +6,8 @@
 //  Copyright © 2019 fashionexpress. All rights reserved.
 //
 
+// Comments: Public func & variables are declared here
+
 import Foundation
 
 var dateFormatter: DateFormatter = {
@@ -55,5 +57,11 @@ extension Int {
         }
         
         return numberFormatter.string(from: NSNumber(integerLiteral: self))
+    }
+}
+
+extension Date {
+    init(milliseconds:Int) {
+        self = Date(timeIntervalSince1970: TimeInterval(milliseconds) / 1000)
     }
 }

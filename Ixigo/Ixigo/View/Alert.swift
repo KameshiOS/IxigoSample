@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Custom protocol to show alert through the application
 protocol Alert {
 }
 extension Alert where Self: UIViewController {

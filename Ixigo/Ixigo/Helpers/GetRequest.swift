@@ -8,7 +8,7 @@
 
 import UIKit
 
-// Get Request Class to hit the GET API
+// Comment: Get Request Class to hit the GET API
 class GetRequest: NSObject {
     static func getMethod(getURL: String, completion: @escaping requestCallBack) {
         Indicator.shared.showIndicator()

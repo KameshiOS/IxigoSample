@@ -26,6 +26,7 @@ class SearchFlightVC: UIViewController {
         classTF.inputView = classPicker
     }
     @IBAction func SearchButtonAction(_ sender: Any) {
+        // Goto Flight Details page
         let destVC = storyboard?.instantiateViewController(withIdentifier: "FlightsVC") as! FlightsVC
         destVC.passenger = passenger
         destVC.flightClass = classTF.text ?? "Any"
