@@ -127,6 +127,19 @@ extension FlightsVC: UITableViewDelegate, UITableViewDataSource {
                 self.closeSortView()
                 self.flightDetailTable.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
             }
+        } else {
+            let destVC = storyboard?.instantiateViewController(withIdentifier: "ETicketVC") as! ETicketVC
+            if isSorted {
+                destVC.flight = sortedFlights[indexPath.row]
+            } else {
+                if isFiltered {
+                    destVC.flight = filteredFlights[indexPath.row]
+                } else {
+                    destVC.flight = FlightsVM.shared.flights[indexPath.row]
+                }
+            }
+            destVC.passenger = passenger
+            navigationController?.pushViewController(destVC, animated: true)
         }
     }
 }

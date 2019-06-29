@@ -15,8 +15,20 @@ import UIKit
             updateView()
         }
     }
+    @IBInspectable var borderColor: UIColor? {
+        didSet {
+            updateView()
+        }
+    }
+    @IBInspectable var borderWidth: CGFloat = 0.0 {
+        didSet {
+            updateView()
+        }
+    }
     func updateView() {
         layer.cornerRadius = cornerRadius
+        layer.borderColor = borderColor?.cgColor
+        layer.borderWidth = borderWidth
         clipsToBounds = true
     }
 }

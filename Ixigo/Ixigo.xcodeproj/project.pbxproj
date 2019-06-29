@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		445FCAD267990092F95162CF /* Pods_Ixigo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3F57837892DEC3DE4DB0CD /* Pods_Ixigo.framework */; };
 		841DC55122C73F5200C22DC9 /* SortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DC55022C73F5200C22DC9 /* SortCell.swift */; };
-		841DC55322C7519E00C22DC9 /* DashedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DC55222C7519E00C22DC9 /* DashedView.swift */; };
 		841DC55522C7540600C22DC9 /* ETicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DC55422C7540600C22DC9 /* ETicketVC.swift */; };
 		84BB80F522C63DCC00B8252D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB80F422C63DCC00B8252D /* AppDelegate.swift */; };
 		84BB80FA22C63DCC00B8252D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BB80F822C63DCC00B8252D /* Main.storyboard */; };
@@ -61,7 +60,6 @@
 		7F3F57837892DEC3DE4DB0CD /* Pods_Ixigo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ixigo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E70072899CFEFB21B06AA3 /* Pods_IxigoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IxigoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		841DC55022C73F5200C22DC9 /* SortCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortCell.swift; sourceTree = "<group>"; };
-		841DC55222C7519E00C22DC9 /* DashedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedView.swift; sourceTree = "<group>"; };
 		841DC55422C7540600C22DC9 /* ETicketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETicketVC.swift; sourceTree = "<group>"; };
 		84BB80F122C63DCC00B8252D /* Ixigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ixigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BB80F422C63DCC00B8252D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -223,7 +221,6 @@
 				84BB813C22C6779300B8252D /* NavigationDesignController.swift */,
 				84BB813E22C67D9F00B8252D /* ViewDesign.swift */,
 				84BB814022C681C600B8252D /* ButtonDesign.swift */,
-				841DC55222C7519E00C22DC9 /* DashedView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -483,7 +480,6 @@
 				84BB80FD22C63DCC00B8252D /* Ixigo.xcdatamodeld in Sources */,
 				84BB813122C6431000B8252D /* FlightsVC.swift in Sources */,
 				84BB812A22C63F0600B8252D /* Constants.swift in Sources */,
-				841DC55322C7519E00C22DC9 /* DashedView.swift in Sources */,
 				84BB813322C6441900B8252D /* Flight.swift in Sources */,
 				841DC55122C73F5200C22DC9 /* SortCell.swift in Sources */,
 				84BB814422C68C7100B8252D /* SearchDetailCell.swift in Sources */,
