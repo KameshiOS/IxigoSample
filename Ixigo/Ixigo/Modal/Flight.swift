@@ -27,3 +27,13 @@ struct Flight {
         self.takeoffTime = takeoffTime
     }
 }
+
+struct Sort {
+    var image: String!
+    var name: String!
+    
+    init(image: String, name: String) {
+        self.image = image
+        self.name = name
+    }
+}

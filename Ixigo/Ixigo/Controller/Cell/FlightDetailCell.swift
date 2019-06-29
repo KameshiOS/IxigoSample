@@ -20,6 +20,7 @@ class FlightDetailCell: UITableViewCell {
     @IBOutlet weak var flightName: UILabel!
     @IBOutlet weak var logo: UIImageView!
     
+    var passenger = 1
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -53,7 +54,7 @@ extension FlightDetailCell {
             flightName.text = "SpiceJet"
         }
         flightClass.text = data.flightClass
-        fare.text = "₹ " + data.price.stringWithCommas(roundedTo: 0)
+        fare.text = "₹ " + (data.price * passenger).stringWithCommas(roundedTo: 0)
         originCode.text = data.origin
         destinationCode.text = data.destination
         departureTime.text = timeFormatter.string(from: data.takeoffTime)

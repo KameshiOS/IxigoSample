@@ -1,0 +1,6 @@
+framework module Pods_Ixigo {
+  umbrella header "Pods-Ixigo-umbrella.h"
+
+  export *
+  module * { export * }
+}

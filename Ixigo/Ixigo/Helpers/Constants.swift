@@ -19,6 +19,14 @@ enum AirLine {
     case JetAirways
     case SpiceJet
 }
+enum Sorting {
+    case priceLow
+    case priceHigh
+    case takeLow
+    case takeHigh
+    case landLow
+    case landHigh
+}
 class APIGet {
     static var sampleFlights = "https://www.ixigo.com/sampleFlightData"
 }

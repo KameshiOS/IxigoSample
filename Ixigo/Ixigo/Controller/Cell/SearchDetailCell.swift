@@ -10,6 +10,8 @@ import UIKit
 
 class SearchDetailCell: UITableViewCell {
 
+    @IBOutlet weak var flightClassLabel: UILabel!
+    @IBOutlet weak var passengerLabel: UILabel!
     @IBOutlet weak var departDate: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

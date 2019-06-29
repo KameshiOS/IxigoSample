@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445FCAD267990092F95162CF /* Pods_Ixigo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3F57837892DEC3DE4DB0CD /* Pods_Ixigo.framework */; };
+		841DC55122C73F5200C22DC9 /* SortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DC55022C73F5200C22DC9 /* SortCell.swift */; };
+		841DC55322C7519E00C22DC9 /* DashedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DC55222C7519E00C22DC9 /* DashedView.swift */; };
+		841DC55522C7540600C22DC9 /* ETicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DC55422C7540600C22DC9 /* ETicketVC.swift */; };
 		84BB80F522C63DCC00B8252D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB80F422C63DCC00B8252D /* AppDelegate.swift */; };
 		84BB80FA22C63DCC00B8252D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BB80F822C63DCC00B8252D /* Main.storyboard */; };
 		84BB80FD22C63DCC00B8252D /* Ixigo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84BB80FB22C63DCC00B8252D /* Ixigo.xcdatamodeld */; };
@@ -28,6 +32,8 @@
 		84BB814122C681C600B8252D /* ButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB814022C681C600B8252D /* ButtonDesign.swift */; };
 		84BB814422C68C7100B8252D /* SearchDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB814322C68C7100B8252D /* SearchDetailCell.swift */; };
 		84BB814622C697A100B8252D /* FlightDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB814522C697A100B8252D /* FlightDetailCell.swift */; };
+		A36E1C9806A6193E0FFA5301 /* Pods_IxigoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E70072899CFEFB21B06AA3 /* Pods_IxigoUITests.framework */; };
+		ABFA023D52CDDF9F26B67296 /* Pods_IxigoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C312D1E514ACBA79579FD0 /* Pods_IxigoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		400297F52B09205CB2E55F33 /* Pods-IxigoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IxigoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IxigoUITests/Pods-IxigoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5F140828DA01B30A75BF1BE2 /* Pods-IxigoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IxigoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IxigoTests/Pods-IxigoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6785714D1A89880484001E0B /* Pods-IxigoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IxigoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IxigoTests/Pods-IxigoTests.release.xcconfig"; sourceTree = "<group>"; };
+		76A7F88C7DAB00B7C6FC5829 /* Pods-Ixigo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ixigo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ixigo/Pods-Ixigo.debug.xcconfig"; sourceTree = "<group>"; };
+		7F3F57837892DEC3DE4DB0CD /* Pods_Ixigo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ixigo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E70072899CFEFB21B06AA3 /* Pods_IxigoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IxigoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		841DC55022C73F5200C22DC9 /* SortCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortCell.swift; sourceTree = "<group>"; };
+		841DC55222C7519E00C22DC9 /* DashedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedView.swift; sourceTree = "<group>"; };
+		841DC55422C7540600C22DC9 /* ETicketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETicketVC.swift; sourceTree = "<group>"; };
 		84BB80F122C63DCC00B8252D /* Ixigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ixigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BB80F422C63DCC00B8252D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84BB80F922C63DCC00B8252D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +90,9 @@
 		84BB814022C681C600B8252D /* ButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDesign.swift; sourceTree = "<group>"; };
 		84BB814322C68C7100B8252D /* SearchDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailCell.swift; sourceTree = "<group>"; };
 		84BB814522C697A100B8252D /* FlightDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailCell.swift; sourceTree = "<group>"; };
+		87C312D1E514ACBA79579FD0 /* Pods_IxigoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IxigoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34EF879521FF418731DAADC /* Pods-IxigoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IxigoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IxigoUITests/Pods-IxigoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0BD0FA85502D5E7BED4EACF /* Pods-Ixigo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ixigo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ixigo/Pods-Ixigo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445FCAD267990092F95162CF /* Pods_Ixigo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABFA023D52CDDF9F26B67296 /* Pods_IxigoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +116,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A36E1C9806A6193E0FFA5301 /* Pods_IxigoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C52D4BA22C2DEC0EB3F7281 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76A7F88C7DAB00B7C6FC5829 /* Pods-Ixigo.debug.xcconfig */,
+				E0BD0FA85502D5E7BED4EACF /* Pods-Ixigo.release.xcconfig */,
+				5F140828DA01B30A75BF1BE2 /* Pods-IxigoTests.debug.xcconfig */,
+				6785714D1A89880484001E0B /* Pods-IxigoTests.release.xcconfig */,
+				B34EF879521FF418731DAADC /* Pods-IxigoUITests.debug.xcconfig */,
+				400297F52B09205CB2E55F33 /* Pods-IxigoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		70A90B39729F85B0C7E0758A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F3F57837892DEC3DE4DB0CD /* Pods_Ixigo.framework */,
+				87C312D1E514ACBA79579FD0 /* Pods_IxigoTests.framework */,
+				83E70072899CFEFB21B06AA3 /* Pods_IxigoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84BB80E822C63DCC00B8252D = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +153,8 @@
 				84BB810B22C63DCF00B8252D /* IxigoTests */,
 				84BB811622C63DCF00B8252D /* IxigoUITests */,
 				84BB80F222C63DCC00B8252D /* Products */,
+				5C52D4BA22C2DEC0EB3F7281 /* Pods */,
+				70A90B39729F85B0C7E0758A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +210,7 @@
 				84BB814222C68C4100B8252D /* Cell */,
 				84BB813A22C676AF00B8252D /* SearchFlightVC.swift */,
 				84BB813022C6431000B8252D /* FlightsVC.swift */,
+				841DC55422C7540600C22DC9 /* ETicketVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +223,7 @@
 				84BB813C22C6779300B8252D /* NavigationDesignController.swift */,
 				84BB813E22C67D9F00B8252D /* ViewDesign.swift */,
 				84BB814022C681C600B8252D /* ButtonDesign.swift */,
+				841DC55222C7519E00C22DC9 /* DashedView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +259,7 @@
 			children = (
 				84BB814322C68C7100B8252D /* SearchDetailCell.swift */,
 				84BB814522C697A100B8252D /* FlightDetailCell.swift */,
+				841DC55022C73F5200C22DC9 /* SortCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -222,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84BB811C22C63DCF00B8252D /* Build configuration list for PBXNativeTarget "Ixigo" */;
 			buildPhases = (
+				49126EECF2F58EE57E0749A1 /* [CP] Check Pods Manifest.lock */,
 				84BB80ED22C63DCC00B8252D /* Sources */,
 				84BB80EE22C63DCC00B8252D /* Frameworks */,
 				84BB80EF22C63DCC00B8252D /* Resources */,
+				29DB699A1BEDE69CAFFB6327 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84BB811F22C63DCF00B8252D /* Build configuration list for PBXNativeTarget "IxigoTests" */;
 			buildPhases = (
+				52AE781F27E0B266B6B44796 /* [CP] Check Pods Manifest.lock */,
 				84BB810422C63DCF00B8252D /* Sources */,
 				84BB810522C63DCF00B8252D /* Frameworks */,
 				84BB810622C63DCF00B8252D /* Resources */,
@@ -257,6 +309,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84BB812222C63DCF00B8252D /* Build configuration list for PBXNativeTarget "IxigoUITests" */;
 			buildPhases = (
+				EB7D8A632425D812493B6ADA /* [CP] Check Pods Manifest.lock */,
 				84BB810F22C63DCF00B8252D /* Sources */,
 				84BB811022C63DCF00B8252D /* Frameworks */,
 				84BB811122C63DCF00B8252D /* Resources */,
@@ -341,6 +394,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29DB699A1BEDE69CAFFB6327 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ixigo/Pods-Ixigo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ixigo/Pods-Ixigo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49126EECF2F58EE57E0749A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ixigo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52AE781F27E0B266B6B44796 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IxigoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB7D8A632425D812493B6ADA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IxigoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84BB80ED22C63DCC00B8252D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -355,11 +483,14 @@
 				84BB80FD22C63DCC00B8252D /* Ixigo.xcdatamodeld in Sources */,
 				84BB813122C6431000B8252D /* FlightsVC.swift in Sources */,
 				84BB812A22C63F0600B8252D /* Constants.swift in Sources */,
+				841DC55322C7519E00C22DC9 /* DashedView.swift in Sources */,
 				84BB813322C6441900B8252D /* Flight.swift in Sources */,
+				841DC55122C73F5200C22DC9 /* SortCell.swift in Sources */,
 				84BB814422C68C7100B8252D /* SearchDetailCell.swift in Sources */,
 				84BB813722C6526500B8252D /* Indicator.swift in Sources */,
 				84BB813F22C67D9F00B8252D /* ViewDesign.swift in Sources */,
 				84BB813922C653FF00B8252D /* Alert.swift in Sources */,
+				841DC55522C7540600C22DC9 /* ETicketVC.swift in Sources */,
 				84BB813B22C676AF00B8252D /* SearchFlightVC.swift in Sources */,
 				84BB813522C6481C00B8252D /* Helper.swift in Sources */,
 			);
@@ -534,6 +665,7 @@
 		};
 		84BB811D22C63DCF00B8252D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A7F88C7DAB00B7C6FC5829 /* Pods-Ixigo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -553,6 +685,7 @@
 		};
 		84BB811E22C63DCF00B8252D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0BD0FA85502D5E7BED4EACF /* Pods-Ixigo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -572,6 +705,7 @@
 		};
 		84BB812022C63DCF00B8252D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F140828DA01B30A75BF1BE2 /* Pods-IxigoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -593,6 +727,7 @@
 		};
 		84BB812122C63DCF00B8252D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6785714D1A89880484001E0B /* Pods-IxigoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -614,6 +749,7 @@
 		};
 		84BB812322C63DCF00B8252D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B34EF879521FF418731DAADC /* Pods-IxigoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -634,6 +770,7 @@
 		};
 		84BB812422C63DCF00B8252D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 400297F52B09205CB2E55F33 /* Pods-IxigoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

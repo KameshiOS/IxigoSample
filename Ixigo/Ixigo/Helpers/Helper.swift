@@ -19,6 +19,10 @@ var timeFormatter: DateFormatter = {
     return formatter
 }()
 
+var flightClassArray = ["Any", "Economy", "Business"]
+
+var sortArray = [Sort(image: "currency", name: "Price: Low -> High"), Sort(image: "currency", name: "Price: High -> Low"), Sort(image: "takeoff", name: "Take off Time: Low -> High"), Sort(image: "takeoff", name: "Take off Time: High -> Low"), Sort(image: "landing", name: "Landing Time: Low -> High"), Sort(image: "landing", name: "Landing Time: High -> Low")]
+
 func getDuration(start: Date, end: Date) -> String {
     let formatter = DateComponentsFormatter()
     formatter.allowedUnits = [.hour, .minute, .day, .weekOfMonth]
